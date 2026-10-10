@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#dcebd8">
+<title>2028 新西兰旅行｜北岛 × 南岛</title>
+<style>
+:root{
+  --ink:#2d4438;--muted:#7b9080;--blue:#dcebd8;--blue2:#f0f7ed;
+  --deep:#5f8a67;--line:#dce8d8;--paper:#fbfdf9;--white:#fff;
+  --shadow:0 8px 24px rgba(76,112,77,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:linear-gradient(180deg,#edf6e9 0,#f8fbf5 360px,#fbfdf9 100%);color:var(--ink);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.65}
+a{color:var(--deep);text-decoration:none}a:hover{text-decoration:underline}
+.hero{padding:48px 22px 30px;text-align:center;background:linear-gradient(135deg,#d5e9ce,#eaf4e5 55%,#f8fbf5)}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#648466;font-weight:700}
+h1{font-size:clamp(28px,5vw,44px);letter-spacing:.03em;margin:8px 0 4px;font-weight:750}
+.subtitle{color:#718a72;margin:0 auto 18px}
+.hero-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:#ffffffc7;border:1px solid #ffffff;color:#58745a;font-size:13px}
+.nav-wrap{position:sticky;top:0;z-index:10;background:#f9fcfdee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1080px;margin:auto;padding:10px 18px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.nav a{font-size:13px;color:#58745a;padding:6px 11px;border-radius:999px;background:#edf5e9}
+.nav a:hover{background:#dcebd8;text-decoration:none}
+.container{max-width:1000px;margin:28px auto 70px;padding:0 18px}
+.section-title{display:flex;align-items:center;gap:10px;margin:32px 0 15px;font-size:21px}
+.section-title:before{content:"";width:5px;height:24px;background:#8eb786;border-radius:5px}
+.overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.overview-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:var(--shadow)}
+.overview-card .icon{font-size:22px}.overview-card h3{font-size:15px;margin:5px 0}.overview-card p{font-size:13px;color:var(--muted);margin:0}
+.hotel-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hotel{border:1px solid var(--line);background:white;border-radius:14px;padding:15px 17px}
+.hotel .place{font-size:12px;color:#6d8b9e;margin-bottom:4px}.hotel strong{display:block;font-size:15px}.hotel p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.day{display:grid;grid-template-columns:94px minmax(0,1fr);gap:18px;margin:14px 0}
+.day-side{padding-top:17px;text-align:right}
+.day-num{font-size:12px;letter-spacing:.1em;color:#769477;font-weight:800}
+.day-date{font-size:13px;color:var(--muted)}
+.day-card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:var(--shadow)}
+.day-head{padding:15px 19px;background:linear-gradient(90deg,#e7f1e1,#f8fbf5);border-bottom:1px solid #e5eff5}
+.day-head h3{font-size:17px;margin:0}.day-head p{font-size:12px;color:#718b9c;margin:3px 0 0}
+.day-body{padding:15px 19px 18px}
+.item{display:grid;grid-template-columns:86px minmax(0,1fr);gap:12px;padding:8px 0}
+.time{font-size:13px;color:#628768;font-weight:700;white-space:nowrap}
+.item p{margin:0}.item small{display:block;color:var(--muted);margin-top:3px;font-size:12px}
+.note{margin-top:12px;padding:11px 13px;background:#f1f7ed;border-left:3px solid #a9c89e;border-radius:0 9px 9px 0;font-size:13px;color:#587487}
+.checklist{list-style:none;padding:0;margin:0}.checklist li{padding:7px 0;border-bottom:1px solid #edf2f5}.checklist li:last-child{border:0}
+.checklist input{accent-color:#78a66f;margin-right:9px}
+.footer{text-align:center;padding:24px;color:#8299a7;font-size:12px}
+@media(max-width:650px){
+ .hero{padding-top:35px}.overview{grid-template-columns:1fr}.hotel-list{grid-template-columns:1fr}
+ .day{grid-template-columns:1fr;gap:5px}.day-side{text-align:left;padding:0 3px;display:flex;gap:10px;align-items:baseline}
+ .day-body{padding:12px 14px}.day-head{padding:13px 14px}.item{grid-template-columns:76px minmax(0,1fr);gap:8px}
+}
+@media print{.nav-wrap{position:static}.day-card,.overview-card{box-shadow:none}.hero{background:#edf6e9}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="eyebrow">NEW ZEALAND · LATE SPRING ROAD TRIP</div>
+  <h1>新西兰 · 北岛 × 南岛</h1>
+  <p class="subtitle">湖泊、森林、雪山与慢节奏自驾</p>
+  <div class="hero-meta">
+    <span class="pill">📅 2028 年 11 月底 — 12 月初</span>
+    <span class="pill">🧭 10 天行程框架</span>
+    <span class="pill">🚗 自驾为主</span>
+  </div>
+</header>
+<div class="nav-wrap"><nav class="nav">
+  <a href="#overview">行程总览</a><a href="#flights">航班</a><a href="#hotels">住宿</a>
+  <a href="#day1">奥克兰</a><a href="#day2">罗托鲁瓦</a><a href="#day3">转场日</a>
+  <a href="#day4">蒂卡波</a><a href="#day5">库克山</a><a href="#day6">瓦纳卡</a>
+  <a href="#day8">箭镇</a><a href="#day9">皇后镇</a><a href="#day10">机动日</a>
+</nav></div>
+
+<main class="container">
+  <section id="overview">
+    <h2 class="section-title">🗺️ 行程总览</h2>
+    <div class="overview">
+      <div class="overview-card"><div class="icon">🌿</div><h3>北岛｜奥克兰・罗托鲁瓦</h3><p>草原海岸、蓝泉、瀑布、湖泊、森林夜游</p></div>
+      <div class="overview-card"><div class="icon">🏔️</div><h3>南岛｜费尔利・蒂卡波・库克山</h3><p>星空湖泊、教堂、冰川观景与高山风景</p></div>
+      <div class="overview-card"><div class="icon">💙</div><h3>南岛｜瓦纳卡・皇后镇</h3><p>湖畔慢游、箭镇小镇、缆车与户外体验</p></div>
+    </div>
+  </section>
+
+  <section id="flights">
+    <h2 class="section-title">✈️ 航班</h2>
+    <div class="hotel-list">
+      <div class="hotel"><div class="place">去程</div><strong>香港 → 奥克兰</strong><p>计划 Day 1 抵达，目标抵达时间约 11:00；订票后补充航班号与时间。</p></div>
+      <div class="hotel"><div class="place">北岛 → 南岛</div><strong>罗托鲁瓦 → 基督城</strong><p>暂按 Day 3 中午航班规划，目标约 13:00–15:00 抵达；以实际航班为准。</p></div>
+      <div class="hotel"><div class="place">回程</div><strong>皇后镇 → 香港（中转）</strong><p>建议根据实际起飞时间安排机动日与最后一晚住宿。</p></div>
+    </div>
+  </section>
+
+  <section id="hotels">
+    <h2 class="section-title">🏨 住宿安排</h2>
+    <div class="hotel-list">
+      <div class="hotel"><div class="place">Day 1–3｜2 晚</div><strong>罗托鲁瓦湖附近</strong><p>优先选择停车方便、方便往返市区和红木森林的住宿。</p></div>
+      <div class="hotel"><div class="place">Day 3–4｜1 晚</div><strong>费尔利 Fairlie</strong><p>南岛落地后采购并休息，避免抵达当天夜间长途驾驶。</p></div>
+      <div class="hotel"><div class="place">Day 4–6｜2 晚</div><strong>蒂怀泽 Twizel</strong><p>作为蒂卡波、普卡基湖和库克山国家公园的落脚点。</p></div>
+      <div class="hotel"><div class="place">Day 6–8｜2 晚</div><strong>瓦纳卡 Wanaka</strong><p>安排湖边散步、小镇和轻徒步，节奏放松。</p></div>
+      <div class="hotel"><div class="place">Day 8–10｜2 晚</div><strong>皇后镇 Queenstown</strong><p>方便体验缆车、Luge 和湖边晚餐；机动日也可留在这里。</p></div>
+    </div>
+  </section>
+
+  <section id="itinerary">
+    <h2 class="section-title">📍 每日行程</h2>
+
+    <article class="day" id="day1"><div class="day-side"><span class="day-num">DAY 01</span><span class="day-date">抵达日</span></div>
+      <div class="day-card"><div class="day-head"><h3>抵达奥克兰 → Te Henga Walkway → 罗托鲁瓦</h3><p>住宿：罗托鲁瓦湖附近 · 第 1 晚</p></div><div class="day-body">
+        <div class="item"><div class="time">11:00</div><div><p>抵达奥克兰机场，取车</p><small>需预留入境、取行李和租车手续时间。</small></div></div>
+        <div class="item"><div class="time">12:00</div><div><p>The Portland Public House 附近午餐</p></div></div>
+        <div class="item"><div class="time">14:00–17:30</div><div><p>Te Henga Walkway – Constable Rd（泰妍草原）</p><small>出发前确认步道开放状态、停车位置和日落时间。</small></div></div>
+        <div class="item"><div class="time">傍晚</div><div><p>晚餐后开车前往罗托鲁瓦，入住休息</p><small>奥克兰机场到罗托鲁瓦约 3 小时车程；加上步道后当天较满，若航班延误建议删减景点。</small></div></div>
+      </div></div>
+    </article>
+
+    <article class="day" id="day2"><div class="day-side"><span class="day-num">DAY 02</span><span class="day-date">自然景观</span></div>
+      <div class="day-card"><div class="day-head"><h3>蓝泉 → 胡卡瀑布 → 陶波湖 → 红木森林</h3><p>住宿：罗托鲁瓦湖附近 · 第 2 晚</p></div><div class="day-body">
+        <div class="item"><div class="time">09:00</div><div><p>蓝泉 Blue Spring</p><small>导航：Blue Spring Carpark（Leslie Rd）。从该入口步行前往核心景观，按体力和现场步道情况决定停留时间。</small></div></div>
+        <div class="item"><div class="time">11:00–11:30</div><div><p>胡卡瀑布 Huka Falls</p><small>导航：Huka Falls Trust Kiosk；观景平台短暂停留。</small></div></div>
+        <div class="item"><div class="time">12:15–14:00</div><div><p>陶波湖 Lake Taupō + 湖畔野温泉</p><small>导航：Taharepa Baths。<a href="https://xhslink.cn/o/78OBhidxVHg" target="_blank" rel="noopener">野温泉参考</a>；请现场确认水温、安全和入水条件。</small></div></div>
+        <div class="item"><div class="time">下午</div><div><p>返回罗托鲁瓦，吃晚餐</p><small>建议先吃饭再参加夜间活动，具体时间按营业时段调整。</small></div></div>
+        <div class="item"><div class="time">傍晚–晚上</div><div><p>Redwoods Treewalk + 萤火虫投影秀</p><small>园区可散步；高空栈道及夜间灯光/投影体验按官网项目和时段购票：<a href="https://www.treewalk.co.nz/" target="_blank" rel="noopener">Treewalk 官网</a>。<a href="https://xhslink.cn/o/6vm6NSHw42F" target="_blank" rel="noopener">活动参考</a></small></div></div>
+        <div class="note">📌 这天景点较多，蓝泉步道、陶波湖停留和夜间 Treewalk 的开放时段建议出发前再次核实；若时间紧，优先保留蓝泉、胡卡瀑布和夜间体验。</div>
+      </div></div>
+    </article>
+
+    <article class="day" id="day3"><div class="day-side"><span class="day-num">DAY 03</span><span class="day-date">飞往南岛</span></div>
+      <div class="day-card"><div class="day-head"><h3>罗托鲁瓦 → 基督城 → 费尔利</h3><p>住宿：费尔利民宿 · 第 1 晚</p></div><div class="day-body">
+        <div class="item"><div class="time">早上</div><div><p>退房后前往 Redwoods Treewalk（视前一晚体验情况决定是否再去）</p></div></div>
+        <div class="item"><div class="time">上午</div><div><p>还车、前往罗托鲁瓦机场</p><small>预留还车、加油及机场手续时间。</small></div></div>
+        <div class="item"><div class="time">约 13:00–15:00</div><div><p>罗托鲁瓦飞往基督城</p><small>航班时间待确认；按实际航班更新。</small></div></div>
+        <div class="item"><div class="time">抵达后</div><div><p>基督城机场取车，前往超市采购</p></div></div>
+        <div class="item"><div class="time">傍晚</div><div><p>开车前往费尔利入住，休息</p><small>尽量避免夜间长途驾驶；若航班较晚，可考虑住基督城并次日再出发。</small></div></div>
+      </div></div>
+    </article>
+
+    <article class="day" id="day4"><div class="day-side"><span class="day-num">DAY 04</span><span class="day-date">湖泊小镇</span></div>
+      <div class="day-card"><div class="day-head"><h3>费尔利 → 蒂卡波湖 → 蒂怀泽</h3><p>住宿：Twizel · 第 1 晚</p></div><div class="day-body">
+        <div class="item"><div class="time">上午</div><div><p>从费尔利出发，前往 Lake Tekapo 蒂卡波湖</p></div></div>
+        <div class="item"><div class="time">中午</div><div><p>好牧羊人教堂、湖边散步、咖啡或午餐</p></div></div>
+        <div class="item"><div class="time">下午</div><div><p>开车前往 Twizel，办理入住</p><small>如果天气晴朗、时间充裕，可在湖边多留一会儿，不必赶行程。</small></div></div>
+      </div></div>
+    </article>
+
+    <article class="day" id="day5"><div class="day-side"><span class="day-num">DAY 05</span><span class="day-date">雪山湖泊</span></div>
+      <div class="day-card"><div class="day-head"><h3>普卡基湖 + 库克山国家公园</h3><p>住宿：Twizel · 第 2 晚</p></div><div class="day-body">
+        <div class="item"><div class="time">上午</div><div><p>Lake Pukaki 普卡基湖，沿途观景拍照</p></div></div>
+        <div class="item"><div class="time">中午</div><div><p>Aoraki / Mount Cook 库克山国家公园</p></div></div>
+        <div class="item"><div class="time">下午</div><div><p>Tasman Glacier Viewpoint 徒步</p><small>按天气、步道开放情况和体力决定是否前往；注意防风、防晒并穿合适鞋子。</small></div></div>
+        <div class="item"><div class="time">傍晚</div><div><p>返回 Twizel</p></div></div>
+        <div class="note">🌦️ 库克山一带天气变化较快，前一晚查看预报和步道公告；不建议为了打卡硬走恶劣天气路线。</div>
+      </div></div>
+    </article>
+
+    <article class="day" id="day6"><div class="day-side"><span class="day-num">DAY 06</span><span class="day-date">公路风景</span></div>
+      <div class="day-card"><div class="day-head"><h3>Twizel → Lindis Pass → Wanaka</h3><p>住宿：Wanaka · 第 1 晚</p></div><div class="day-body">
+        <div class="item"><div class="time">上午</div><div><p>退房出发，途经 High Country Salmon 三文鱼店</p><small>营业时间以店家公布为准。</small></div></div>
+        <div class="item"><div class="time">途中</div><div><p>Lindis Pass 观景、拍照</p><small>在安全的停车区域停靠，不在道路边随意停车。</small></div></div>
+        <div class="item"><div class="time">下午</div><div><p>抵达瓦纳卡，入住并稍作休息</p></div></div>
+        <div class="item"><div class="time">傍晚</div><div><p>打卡 That Wanaka Tree，湖边散步</p></div></div>
+      </div></div>
+    </article>
+
+    <article class="day" id="day7"><div class="day-side"><span class="day-num">DAY 07</span><span class="day-date">慢游日</span></div>
+      <div class="day-card"><div class="day-head"><h3>瓦纳卡慢游</h3><p>住宿：Wanaka · 第 2 晚</p></div><div class="day-body">
+        <div class="item"><div class="time">上午</div><div><p>Wanaka Lavender Farm（薰衣草农场）</p><small>11 月底至 12 月初是否进入花期需提前确认，不要默认一定盛开。</small></div></div>
+        <div class="item"><div class="time">下午</div><div><p>瓦纳卡小镇逛逛、咖啡、湖边散步</p></div></div>
+        <div class="item"><div class="time">可选</div><div><p>Diamond Lake 轻徒步</p><small>看天气与当天体力决定；不想走路时可直接留在湖边休息。</small></div></div>
+      </div></div>
+    </article>
+
+    <article class="day" id="day8"><div class="day-side"><span class="day-num">DAY 08</span><span class="day-date">小镇与山路</span></div>
+      <div class="day-card"><div class="day-head"><h3>Wanaka → Arrowtown → Queenstown</h3><p>住宿：皇后镇 · 第 1 晚</p></div><div class="day-body">
+        <div class="item"><div class="time">上午</div><div><p>从瓦纳卡出发，前往 Arrowtown 箭镇</p></div></div>
+        <div class="item"><div class="time">中午</div><div><p>箭镇逛街、吃饭，慢慢走走</p></div></div>
+        <div class="item"><div class="time">下午</div><div><p>视天气和路况选择 Crown Range 山路观景，前往皇后镇</p><small>出发前确认道路情况；天气不佳时优先选择更稳妥的路线。</small></div></div>
+        <div class="item"><div class="time">傍晚</div><div><p>入住皇后镇，湖边散步、晚餐</p></div></div>
+      </div></div>
+    </article>
+
+    <article class="day" id="day9"><div class="day-side"><span class="day-num">DAY 09</span><span class="day-date">户外体验</span></div>
+      <div class="day-card"><div class="day-head"><h3>皇后镇经典体验</h3><p>住宿：皇后镇 · 第 2 晚</p></div><div class="day-body">
+        <div class="item"><div class="time">上午</div><div><p>Skyline 缆车，俯瞰皇后镇与瓦卡蒂普湖</p></div></div>
+        <div class="item"><div class="time">中午</div><div><p>Luge 滑板车</p><small>按现场开放情况和排队时间安排。</small></div></div>
+        <div class="item"><div class="time">下午</div><div><p>滑翔伞或喷射快艇（二选一）</p><small>建议提前预订，并留意天气取消政策。</small></div></div>
+        <div class="item"><div class="time">晚上</div><div><p>瓦卡蒂普湖边晚餐</p></div></div>
+      </div></div>
+    </article>
+
+    <article class="day" id="day10"><div class="day-side"><span class="day-num">DAY 10</span><span class="day-date">机动日</span></div>
+      <div class="day-card"><div class="day-head"><h3>皇后镇自由活动 / 天气备用日</h3><p>住宿与返程：根据最终机票调整</p></div><div class="day-body">
+        <div class="item"><div class="time">自由安排</div><div><p>补逛皇后镇、咖啡店、湖边散步或购物</p></div></div>
+        <div class="item"><div class="time">天气备用</div><div><p>若前一天户外项目因天气取消，可优先放在这一天</p></div></div>
+        <div class="item"><div class="time">返程</div><div><p>皇后镇飞香港（中转）</p><small>如果回程航班当天起飞，需按航班时间缩短机动日；如果想完整保留机动日，住宿和总天数可能需要增加一晚。</small></div></div>
+        <div class="note">🧳 住宿表目前是皇后镇住 Day 8–10 共 2 晚，因此 Day 10 通常为退房日。等机票确定后，再决定 Day 10 是完整机动日还是返程日。</div>
+      </div></div>
+    </article>
+  </section>
+
+  <section id="todo">
+    <h2 class="section-title">✅ 出发前待确认</h2>
+    <div class="day-card"><div class="day-body">
+      <ul class="checklist">
+        <li><label><input type="checkbox">确认香港—奥克兰、罗托鲁瓦—基督城、皇后镇—香港航班</label></li>
+        <li><label><input type="checkbox">确认租车方案：北岛罗托鲁瓦还车、南岛基督城取车是否可行</label></li>
+        <li><label><input type="checkbox">确认 Te Henga Walkway、Blue Spring、Treewalk 的开放情况和停车信息</label></li>
+        <li><label><input type="checkbox">确认湖畔野温泉的入水条件与安全信息</label></li>
+        <li><label><input type="checkbox">确认 Wanaka Lavender Farm 花期与开放日期</label></li>
+        <li><label><input type="checkbox">根据实际回程航班决定机动日和皇后镇住宿晚数</label></li>
+        <li><label><input type="checkbox">提前查看库克山步道、Crown Range 路况和天气预报</label></li>
+      </ul>
+    </div></div>
+  </section>
+</main>
+<footer class="footer">2028 NEW ZEALAND SPRING ROAD TRIP · 行程为规划草稿，开放时间、路况与航班以出发前确认的信息为准。</footer>
+</body>
+</html>
